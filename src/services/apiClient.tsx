@@ -1,8 +1,10 @@
 import axios from "axios"
 
-export default axios.create({
+const apiClient = axios.create({
   baseURL: "https://api.rawg.io/api",
   params: {
-    key: "044915ffc60043f7974141385ba64a4d",
-  }
+    key: "bfe4cc57d4404f3b820187fe284f45e4",
+  },
 });
+
+export default apiClient;
