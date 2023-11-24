@@ -4,7 +4,7 @@ const ColorModeSwitch = () => {
     const {colorMode, toggleColorMode} = useColorMode();
     return <HStack m={3}>
         <Switch colorScheme="green" isChecked={colorMode === "dark"} onChange={toggleColorMode} />
-        <Text as={"em"}>Dark mode</Text>
+        <Text as={"em"} whiteSpace={"nowrap"}>Dark mode</Text>
   </HStack>;
 };
 
